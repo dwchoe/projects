@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>stock machine</title>
+	<script data-main="../pot_backbonejs/js/main" src="../pot_backbonejs/js/libs/require/require.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/custom/bootstrap.min.css">
+	<!-- http://backbonetutorials.com/organizing-backbone-using-modules/ -->
+</head>
+
+<body>
+	<div class="container">
+		<h1>Stock Machine</h1>
+		<hr/>
+		<div class="page"></div>
+		<br>
+		<div class="component"></div>
+	</div>
+	
+	<script type="text/template" id="stock-list-template">
+		<a href="#/new" class="btn btn-primary">New Stock</a>
+		<hr/>
+		Stock List:
+		<table class="table striped">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Content</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td><%= stock.id %></td>
+						<td><%= stock.get("name") %></td>
+					</tr>
+			</tbody>
+		</table>
+	</script>
+	
+	<script type="text/template" id="stock-template">
+		Stock:
+		<table class="table striped">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Content</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><%= greetings.id %></td>
+					<td><%= greetings.get("content") %></td>
+				</tr>
+			</tbody>
+		</table>
+	</script>
+	
+</body>
+</html>
