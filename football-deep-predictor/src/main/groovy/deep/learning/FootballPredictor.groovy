@@ -39,12 +39,36 @@ class FootballPredictor {
         def baltimore = [name: 'baltimore', off_passing: 1807, off_passing_game: 164, off_rushing: 1285, off_rushing_game: 117,
         def_passing: 2089, def_passing_game: 190, def_rushing: 1274, def_rushing_game: 116]
 
+        def kansas_city = [name: 'kansas_city', off_passing: 2706, off_passing_game: 246, off_rushing: 1256, off_rushing_game: 114,
+        def_passing: 2702, def_passing_game: 246, def_rushing: 1396, def_rushing_game: 127]
 
+        def ny_jets = [name: 'ny_jets', off_passing: 2335, off_passing_game: 212, off_rushing: 1125, off_rushing_game: 102,
+        def_passing: 2444, def_passing_game: 222, def_rushing: 1324, def_rushing_game: 120]
 
-        calc(atlanta, minnesota)
-        calc(la_chargers, cleveland)
-        calc(new_england, buffalo)
+        def san_fran = [name: 'san_fran', off_passing: 2440, off_passing_game: 222, off_rushing: 1099, off_rushing_game: 100,
+        def_passing: 2691, def_passing_game: 245, def_rushing: 1425, def_rushing_game: 130]
+
+        def chicago = [name: 'chicago', off_passing: 1838, off_passing_game: 167, off_rushing: 1324, off_rushing_game: 120,
+        def_passing: 2374, def_passing_game: 216, def_rushing: 1236, def_rushing_game: 112]
+
+        def carolina = [name: 'carolina', off_passing: 2244, off_passing_game: 204, off_rushing: 1421, off_rushing_game: 129,
+        def_passing: 2256, def_passing_game: 205, def_rushing: 915, def_rushing_game: 83]
+
+        def cincinnati = [name: 'cincinnati', off_passing: 2185, off_passing_game: 199, off_rushing: 832, off_rushing_game: 76,
+        def_passing: 2242, def_passing_game: 204, def_rushing: 1393, def_rushing_game: 127]
+
+        def green_bay = [name: 'green_bay', off_passing: 2291, off_passing_game: 208, off_rushing: 1104, off_rushing_game: 100,
+        def_passing: 2685, def_passing_game: 244, def_rushing: 1178, def_rushing_game: 107]
+
+        calc(ny_jets, kansas_city)
+        calc(chicago, san_fran)
+        calc(buffalo, new_england)
         calc(baltimore, detroit)
+        calc(atlanta, minnesota)
+        calc(new_orleans, carolina)
+        calc(la_chargers, cleveland)
+        calc(cincinnati, pittsburgh)
+
     }
 
     private static void calc(Map home, Map visitor) {
