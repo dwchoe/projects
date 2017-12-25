@@ -13,18 +13,18 @@ insert into historic_return(category, year, return) values ('Gold','1973-12-31',
 insert into historic_return(category, year, return) values ('Gold','1974-12-31',72.59);
 
 5YR Treasury - https://fred.stlouisfed.org/series/GS5
-insert into historic_return(category, year, return) values ('5YR Treasury','1970-12-31',5.94);
-insert into historic_return(category, year, return) values ('5YR Treasury','1971-12-31',5.64);
-insert into historic_return(category, year, return) values ('5YR Treasury','1972-12-31',6.26);
-insert into historic_return(category, year, return) values ('5YR Treasury','1973-12-31',6.74);
-insert into historic_return(category, year, return) values ('5YR Treasury','1974-12-31',7.10);
+insert into historic_return(category, year, return) values ('5YR Treasury','1970-12-31',-25.38);
+insert into historic_return(category, year, return) values ('5YR Treasury','1971-12-31',-5.05);
+insert into historic_return(category, year, return) values ('5YR Treasury','1972-12-31',10.99);
+insert into historic_return(category, year, return) values ('5YR Treasury','1973-12-31',7.67);
+insert into historic_return(category, year, return) values ('5YR Treasury','1974-12-31',5.34);
 
 10YR Treasury - https://fred.stlouisfed.org/series/GS5
-insert into historic_return(category, year, return) values ('10YR Treasury','1970-12-31',6.28);
-insert into historic_return(category, year, return) values ('10YR Treasury','1971-12-31',6.00);
-insert into historic_return(category, year, return) values ('10YR Treasury','1972-12-31',5.96);
-insert into historic_return(category, year, return) values ('10YR Treasury','1973-12-31',7.29);
-insert into historic_return(category, year, return) values ('10YR Treasury','1974-12-31',7.98);
+insert into historic_return(category, year, return) values ('10YR Treasury','1970-12-31',-9.12);
+insert into historic_return(category, year, return) values ('10YR Treasury','1971-12-31',-4.46);
+insert into historic_return(category, year, return) values ('10YR Treasury','1972-12-31',-0.67);
+insert into historic_return(category, year, return) values ('10YR Treasury','1973-12-31',22.32);
+insert into historic_return(category, year, return) values ('10YR Treasury','1974-12-31',9.47);
 
 commodity (copper) - http://www.macrotrends.net/1476/copper-prices-historical-chart-data
 insert into historic_return(category, year, return) values ('Commodity','1970-12-31',0);
