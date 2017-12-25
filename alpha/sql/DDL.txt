@@ -1,0 +1,7 @@
+create table historic_return
+(
+	"id" SERIAL primary key,
+	"category" text not null,
+	"year" date not null,
+	"return" decimal not null
+)
