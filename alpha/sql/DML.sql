@@ -25,3 +25,10 @@ insert into historic_return(category, year, return) values ('10YR Treasury','197
 insert into historic_return(category, year, return) values ('10YR Treasury','1972-12-31',5.96);
 insert into historic_return(category, year, return) values ('10YR Treasury','1973-12-31',7.29);
 insert into historic_return(category, year, return) values ('10YR Treasury','1974-12-31',7.98);
+
+commodity (copper) - http://www.macrotrends.net/1476/copper-prices-historical-chart-data
+insert into historic_return(category, year, return) values ('Commodity','1970-12-31',0);
+insert into historic_return(category, year, return) values ('Commodity','1971-12-31',-5.66);
+insert into historic_return(category, year, return) values ('Commodity','1972-12-31',0);
+insert into historic_return(category, year, return) values ('Commodity','1973-12-31',0.2);
+insert into historic_return(category, year, return) values ('Commodity','1974-12-31',21.67);
