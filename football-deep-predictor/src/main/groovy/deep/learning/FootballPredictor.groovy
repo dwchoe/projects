@@ -3,71 +3,87 @@ package deep.learning
 class FootballPredictor {
 
     static void main(String[] args) {
-        def minnesota = [name: 'minnesota', off_passing: 2764, off_passing_game: 251, off_rushing: 1369, off_rushing_game: 125,
-        def_passing: 2364, def_passing_game: 215, def_rushing: 830, def_rushing_game: 76]
+        def arizona = [name: 'arizona', off_passing_game: 233, off_rushing_game: 85, def_passing_game: 223, def_rushing_game: 89]
 
-        def atlanta = [name: 'atlanta', off_passing: 2882, off_passing_game: 257, off_rushing: 1285, off_rushing_game: 117,
-        def_passing: 2287, def_passing_game: 208, def_rushing: 1253, def_rushing_game: 113]
+        def atlanta = [name: 'atlanta', off_passing_game: 257, off_rushing_game: 119, def_passing_game: 208, def_rushing_game: 105]
 
-        def detroit = [name: 'detroit', off_passing: 2812, off_passing_game: 256, off_rushing: 861, off_rushing_game: 78,
-        def_passing: 2675, def_passing_game: 243, def_rushing: 1278, def_rushing_game: 116]
+        def baltimore = [name: 'baltimore', off_passing_game: 189, off_rushing_game: 116, def_passing_game: 214, def_rushing_game: 116]
 
-        def new_england = [name: 'new_england', off_passing: 3267, off_passing_game: 297, off_rushing: 1256, off_rushing_game: 114,
-        def_passing: 2974, def_passing_game: 270, def_rushing: 1266, def_rushing_game: 115]
+        def buffalo = [name: 'buffalo', off_passing_game: 176, off_rushing_game: 126, def_passing_game: 228, def_rushing_game: 127]
 
-        def washington = [name: 'washington', off_passing: 2993, off_passing_game: 249, off_rushing: 1204, off_rushing_game: 100,
-        def_passing: 2669, def_passing_game: 222, def_rushing: 1412, def_rushing_game: 117]
+        def carolina = [name: 'carolina', off_passing_game: 194, off_rushing_game: 134, def_passing_game: 224, def_rushing_game: 90]
 
-        def new_orleans = [name: 'new_orleans', off_passing: 2940, off_passing_game: 267, off_rushing: 1563, off_rushing_game: 142,
-        def_passing: 2440, def_passing_game: 222, def_rushing: 1242, def_rushing_game: 113]
+        def chicago = [name: 'chicago', off_passing_game: 176, off_rushing_game: 117, def_passing_game: 213,  def_rushing_game: 106]
 
-        def tampa_bay = [name: 'tampa_bay', off_passing: 2909, off_passing_game: 264, off_rushing: 892, off_rushing_game: 81,
-        def_passing: 3131, def_passing_game: 285, def_rushing: 1220, def_rushing_game: 111]
+        def cincinnati = [name: 'cincinnati', off_passing_game: 194, off_rushing_game: 81, def_passing_game: 212, def_rushing_game: 129]
 
-        def la_chargers = [name: 'la_chargers', off_passing: 2903, off_passing_game: 264, off_rushing: 1025, off_rushing_game: 93,
-        def_passing: 2266, def_passing_game: 206, def_rushing: 1468, def_rushing_game: 1134]
+        def cleveland = [name: 'cleveland', off_passing_game: 197, off_rushing_game: 108, def_passing_game: 231, def_rushing_game: 96]
 
-        def pittsburgh = [name: 'pittsburgh', off_passing: 2892, off_passing_game: 263, off_rushing: 1145, off_rushing_game: 104,
-        def_passing: 2127, def_passing_game: 193, def_rushing: 1056, def_rushing_game: 96]
+        def dallas = [name: 'dallas', off_passing_game: 198, off_rushing_game: 136, def_passing_game: 218, def_rushing_game: 106]
 
-        def cleveland = [name: 'cleveland', off_passing: 2231, off_passing_game: 203, off_rushing: 1181, off_rushing_game: 107,
-        def_passing: 2429, def_passing_game: 221, def_rushing: 1069, def_rushing_game: 97]
+        def denver = [name: 'denver', off_passing_game: 207, off_rushing_game: 116, def_passing_game: 196, def_rushing_game: 88]
 
-        def buffalo = [name: 'buffalo', off_passing: 2008, off_passing_game: 183, off_rushing: 1281, off_rushing_game: 117,
-        def_passing: 2650, def_passing_game: 241, def_rushing: 1254, def_rushing_game: 114]
+        def detroit = [name: 'detroit', off_passing_game: 259, off_rushing_game: 78, def_passing_game: 249, def_rushing_game: 113]
 
-        def baltimore = [name: 'baltimore', off_passing: 1807, off_passing_game: 164, off_rushing: 1285, off_rushing_game: 117,
-        def_passing: 2089, def_passing_game: 190, def_rushing: 1274, def_rushing_game: 116]
+        def green_bay = [name: 'green_bay', off_passing_game: 201, off_rushing_game: 108, def_passing_game: 232, def_rushing_game: 116]
 
-        def kansas_city = [name: 'kansas_city', off_passing: 2706, off_passing_game: 246, off_rushing: 1256, off_rushing_game: 114,
-        def_passing: 2702, def_passing_game: 246, def_rushing: 1396, def_rushing_game: 127]
+        def houston = [name: 'houston', off_passing_game: 210, off_rushing_game: 117, def_passing_game: 246, def_rushing_game: 107]
 
-        def ny_jets = [name: 'ny_jets', off_passing: 2335, off_passing_game: 212, off_rushing: 1125, off_rushing_game: 102,
-        def_passing: 2444, def_passing_game: 222, def_rushing: 1324, def_rushing_game: 120]
+        def indianapolis = [name: 'indianapolis', off_passing_game: 186, off_rushing_game: 101, def_passing_game: 255, def_rushing_game: 123]
 
-        def san_fran = [name: 'san_fran', off_passing: 2440, off_passing_game: 222, off_rushing: 1099, off_rushing_game: 100,
-        def_passing: 2691, def_passing_game: 245, def_rushing: 1425, def_rushing_game: 130]
+        def jacksonville = [name: 'jacksonville', off_passing_game: 230, off_rushing_game: 145, def_passing_game: 173, def_rushing_game: 116]
 
-        def chicago = [name: 'chicago', off_passing: 1838, off_passing_game: 167, off_rushing: 1324, off_rushing_game: 120,
-        def_passing: 2374, def_passing_game: 216, def_rushing: 1236, def_rushing_game: 112]
+        def kansas_city = [name: 'kansas_city', off_passing_game: 256, off_rushing_game: 120, def_passing_game: 248, def_rushing_game: 119]
 
-        def carolina = [name: 'carolina', off_passing: 2244, off_passing_game: 204, off_rushing: 1421, off_rushing_game: 129,
-        def_passing: 2256, def_passing_game: 205, def_rushing: 915, def_rushing_game: 83]
+        def la_chargers = [name: 'la_chargers', off_passing_game: 270, off_rushing_game: 99, def_passing_game: 195, def_rushing_game: 133]
 
-        def cincinnati = [name: 'cincinnati', off_passing: 2185, off_passing_game: 199, off_rushing: 832, off_rushing_game: 76,
-        def_passing: 2242, def_passing_game: 204, def_rushing: 1393, def_rushing_game: 127]
+        def la_rams = [name: 'la_rams', off_passing_game: 245, off_rushing_game: 123, def_passing_game: 212, def_rushing_game: 119]
 
-        def green_bay = [name: 'green_bay', off_passing: 2291, off_passing_game: 208, off_rushing: 1104, off_rushing_game: 100,
-        def_passing: 2685, def_passing_game: 244, def_rushing: 1178, def_rushing_game: 107]
+        def miami = [name: 'miami', off_passing_game: 218, off_rushing_game: 86, def_passing_game: 228, def_rushing_game: 110]
 
-        calc(ny_jets, kansas_city)
-        calc(chicago, san_fran)
-        calc(buffalo, new_england)
-        calc(baltimore, detroit)
-        calc(atlanta, minnesota)
-        calc(new_orleans, carolina)
-        calc(la_chargers, cleveland)
-        calc(cincinnati, pittsburgh)
+        def minnesota = [name: 'minnesota', off_passing_game: 238, off_rushing_game: 121, def_passing_game: 194, def_rushing_game: 87]
+
+        def new_england = [name: 'new_england', off_passing_game: 282, off_rushing_game: 116, def_passing_game: 254, def_rushing_game: 120]
+
+        def new_orleans = [name: 'new_orleans', off_passing_game: 264, off_rushing_game: 132, def_passing_game: 217, def_rushing_game: 112]
+
+        def ny_giants = [name: 'ny_giants', off_passing_game: 224, off_rushing_game: 86, def_passing_game: 260, def_rushing_game: 125]
+
+        def ny_jets = [name: 'ny_jets', off_passing_game: 198, off_rushing_game: 111, def_passing_game: 238, def_rushing_game: 116]
+
+        def oakland = [name: 'oakland', off_passing_game: 227, off_rushing_game: 97, def_passing_game: 232, def_rushing_game: 109]
+
+        def philadelphia = [name: 'philadelphia', off_passing_game: 239, off_rushing_game: 136, def_passing_game: 231, def_rushing_game: 76]
+
+        def pittsburgh = [name: 'pittsburgh', off_passing_game: 277, off_rushing_game: 103, def_passing_game: 196, def_rushing_game: 106]
+
+        def san_fran = [name: 'san_fran', off_passing_game: 242, off_rushing_game: 100, def_passing_game: 241, def_rushing_game: 117]
+
+        def seattle = [name: 'seattle', off_passing_game: 231, off_rushing_game: 102, def_passing_game: 214, def_rushing_game: 114]
+
+        def tampa_bay = [name: 'tampa_bay', off_passing_game: 268, off_rushing_game: 89, def_passing_game: 263, def_rushing_game: 119]
+
+        def tennessee = [name: 'tennessee', off_passing_game: 205, off_rushing_game: 115, def_passing_game: 245, def_rushing_game: 89]
+
+        def washington = [name: 'washington', off_passing_game: 241, off_rushing_game: 93, def_passing_game: 220, def_rushing_game: 126]
+
+        // calculate games
+        calc(minnesota, chicago)
+        calc(detroit, green_bay)
+        calc(indianapolis, houston)
+        calc(new_england, ny_jets)
+        calc(ny_giants, washington)
+        calc(philadelphia, dallas)
+        calc(pittsburgh, cleveland)
+        calc(atlanta, carolina)
+        calc(denver, kansas_city)
+        calc(tennessee, jacksonville)
+        calc(la_rams, san_fran)
+        calc(miami, buffalo)
+        calc(la_chargers, oakland)
+        calc(seattle, arizona)
+        calc(tampa_bay, new_orleans)
+        calc(baltimore, cincinnati)
 
     }
 
